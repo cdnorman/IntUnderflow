@@ -3,7 +3,9 @@ import numpy as np
 
 camera = cv2.VideoCapture(1)
 if not camera.isOpened():
-	exit()
+	camera = cv2.VideoCapture(0)
+	if not camera.isOpened():
+		exit()
 
 while True:
 	_, img = camera.read()
