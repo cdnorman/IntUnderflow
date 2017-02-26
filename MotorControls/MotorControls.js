@@ -1,7 +1,6 @@
-function control(input)
-{
 var five = require("johnny-five");
 var Edison = require("edison-io");
+var board = new five.Board({
   io: new Edison()
 });
 
