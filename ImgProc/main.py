@@ -103,7 +103,7 @@ while True:
 	posTopMeanRel = posTopMean - (width / 2)
 	posBottomMeanRel = posBottomMean - (width / 2)
 
-	out = Dict()
+	out = dict()
 	out["left"] = gotLeft
 	out["right"] = gotRight
 	out["bottom"] = gotBottom
