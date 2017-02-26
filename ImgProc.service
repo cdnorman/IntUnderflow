@@ -1,0 +1,9 @@
+[Unit]
+Description=Image Processing service
+
+[Service]
+Type=oneshot
+ExecStart=/home/root/IntUnderflow
+
+[Install]
+WantedBy=multi-user.target
