@@ -25,7 +25,7 @@ board.on("ready", function() {
   server.listen(3000);
   console.log("Server is listening");
 });
- 
+/* 
 if (input == "w")
 {
 	a.fwd(65);
@@ -55,4 +55,4 @@ else
 	delta = parseInt("input")
 	a.fwd(60+delta);
 	b.fwd(60-delta);
-}
+}*/
