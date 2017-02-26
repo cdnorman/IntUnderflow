@@ -15,8 +15,6 @@ while True:
 	hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 	_, _, v = cv2.split(hsv)
 
-	cv2.imshow("V", v)
-
 	_, threshV = cv2.threshold(v, 64, 255, cv2.THRESH_BINARY_INV)
 	threshV = cv2.morphologyEx(threshV, cv2.MORPH_OPEN, np.ones((10, 10), np.uint8))
 	threshV = cv2.morphologyEx(threshV, cv2.MORPH_CLOSE, np.ones((10, 10), np.uint8))
