@@ -1,5 +1,9 @@
 var five = require("johnny-five");
 var Edison = require("edison-io");
+var http = require('http');
+
+var input = null;
+
 var board = new five.Board({
   io: new Edison()
 });
@@ -14,6 +18,13 @@ board.on("ready", function() {
     controller: "GROVE_I2C_MOTOR_DRIVER",
     pin: "B",
   });
+
+  var server = http.createServer(function(request, response) {
+    console.log(request);
+  });
+  server.listen(3000);
+  console.log("Server is listening");
+});
  
 if (input == "w")
 {
