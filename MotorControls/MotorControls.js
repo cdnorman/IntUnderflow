@@ -56,4 +56,3 @@ else
 	a.fwd(60+delta);
 	b.fwd(60-delta);
 }
-});
